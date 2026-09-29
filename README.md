@@ -1,6 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+
+
+Created a mini project to showcase how metadata, canonicals, json-ld and open graph are implemented. the :- 
+   > /src/app/page.tsx will have sections 
+    for all the meta datas and schemas. 
+   > /src/app/services/page.tsx Is created to show how caching works.
+
+    home page uses no-store so that there wont be caching and services page uses force-cache so that always caching will be included.
+
+
+
+
+
+
+
+
+
 
 First, run the development server:
 
