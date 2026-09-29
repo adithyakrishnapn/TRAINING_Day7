@@ -31,7 +31,7 @@ async function Home(){
   });
 
   const jsonLd = {
-    '@content' : 'https://schema.org',
+    '@context' : 'https://schema.org',
     '@type' : 'Webpage',
     name: 'Webpage To Display Posts',
     description: 'This webpage fetches and displays posts from an external API.',
@@ -42,7 +42,7 @@ async function Home(){
   const updatedAt = new Date().toISOString();
   return (
     <main className="homepage">
-      <script type='applucation/ld+json' dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}  />
+      <script type='application/ld+json' dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}  />
       <header className="homepage-header">
         <p className="homepage-eyebrow">{HOME_PAGE_C0NTENTS.EYEBROW}</p>
         <h1>{HOME_PAGE_C0NTENTS.HEADING}</h1>
